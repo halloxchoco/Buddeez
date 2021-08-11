@@ -1,0 +1,48 @@
+body{
+   font-family: 'Poppins', sans-serif;
+   color: #707070; 
+}
+
+h1{
+    font-family: 'Arvo', serif;
+    color: white;
+    background-color: #3DA5D9;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: #2364AA;
+}
+
+.btn-primary:hover{
+    background-color: #238F85;
+    border: #238F85;
+}
+
+.customBG{
+    background-color: #3DA5D9;
+}
+
+.footerBar{
+    background-color: #3DA5D9;
+    color: white;
+}
+
+.footerBar ul{
+    list-style-type: none;
+}
+
+.footerBar a{
+    color:white;
+    text-decoration: none;
+}
+
+.footerBar a:hover{
+    color: #238F85;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
