@@ -1,0 +1,23 @@
+h1{
+    color: #73bfb8;
+    background-color: white;
+    text-align: center;
+}
+
+body{
+    align-items: center;
+    text-align: center;
+    background-image: url("/images/FlowerBud.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 400px;
+}
+
+.mainButton{
+    width: 200px;
+}
+
+.contentBox{
+    align-items: center;
+    justify-content: center;
+}
