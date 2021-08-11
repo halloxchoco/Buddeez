@@ -46,22 +46,3 @@ h1{
     width: 100px;
     height: 100px;
 }
-
-a{
-    color: #707070;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #2364AA;
-}
-
-h3{
-    color: white;
-    background-color: #3DA5D9;
-}
-
-p:hover{
-    color: #2364AA;
-    cursor: pointer; 
-}

@@ -1,0 +1,24 @@
+a{
+    color: #707070;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2364AA;
+}
+
+h3{
+    color: white;
+    background-color: #3DA5D9;
+}
+
+p:hover{
+    color: #2364AA;
+    cursor: pointer; 
+}
+
+h1{
+    color: #73bfb8;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
