@@ -11,6 +11,8 @@
     <link href="css/sub.css" rel="stylesheet">
 
     <title>Create Account</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!--Navbar-->
@@ -29,16 +31,16 @@
         <div class="row">
           <p style="margin-bottom: 50px">In order to connect with your mentor, we need your contact info. Please choose which ways your prefer to be contacted below.</p>
           <div class="col">
-            <img src="images/Component 17 – 1.png">
+            <img src="images/Component 17 – 1.png" id="contact1" onclick="replaceImage('contact1')">
           </div>
           <div class="col">
-            <img src="images/Component 18 – 1.png">
+            <img src="images/Component 18 – 1.png" id="contact2" onclick="replaceImage('contact2')">
           </div>
           <div class="col">
-            <img src="images/Component 19 – 1.png">
+            <img src="images/Component 19 – 1.png" id="contact3" onclick="replaceImage('contact3')">
           </div>
           <div class="col">
-            <img src="images/Component 20 – 1.png">
+            <img src="images/Component 20 – 1.png" id="contact4" onclick="replaceImage('contact4')">
           </div>
         </div>
         <div class="row justify-content-center">
@@ -97,4 +99,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
   </body>
+
+  <script>
+    const replaceImages = [
+      '/images/Component171Toggle.png',
+      '/images/Component181Toggle.png',
+      '/images/Component191Toggle.png',
+      '/images/Component201Toggle.png',
+    ];
+    function replaceImage(imageID) {
+      let newSrc = null;
+      switch (imageID) {
+        case 'contact1' :
+          newSrc = replaceImages[0];
+          break;
+        case 'contact2' : 
+          newSrc = replaceImages[1];
+          break;
+          case 'contact3' : 
+          newSrc = replaceImages[2];
+          break;
+          case 'contact4' : 
+          newSrc = replaceImages[3];
+          break;       
+      }
+      $(`#${imageID}`).src = newSrc;
+    }
+  </script>
 </html>
