@@ -41,7 +41,7 @@
                 <a class="nav-link text-white" href="goals.html">Goals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Profile</a>
+                <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Profile</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -53,6 +53,28 @@
           </div>
         </div>
       </nav>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+          <img src="images/Mask Group 2.png" alt="Profile Picture" style="margin: 20px; width: 200px; height: 200px;">
+            <p>Name: Aiden Conway</p>
+            <p>Age: Hidden</p>
+            <p>Status: Looking for a Buddee</p>
+            <p>Contact Info: conway.aiden420@gmail.com</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Edit Profile</button>
+      </div>
+    </div>
+  </div>
+</div>
     
 <!--Content-->
       <div class="container">
