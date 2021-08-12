@@ -31,16 +31,16 @@
         <div class="row">
           <p style="margin-bottom: 50px">In order to connect with your mentor, we need your contact info. Please choose which ways your prefer to be contacted below.</p>
           <div class="col">
-            <img src="images/Component 17 – 1.png" id="contact1" onclick="replaceImage('contact1')">
+            <a href="#"><img src="images/Component 17 – 1.png" id="contact1" onclick="replaceImage('contact1')"></a>
           </div>
           <div class="col">
-            <img src="images/Component 18 – 1.png" id="contact2" onclick="replaceImage('contact2')">
+            <a href="#"></a><img src="images/Component 18 – 1.png" id="contact2" onclick="replaceImage('contact2')"></a>
           </div>
           <div class="col">
-            <img src="images/Component 19 – 1.png" id="contact3" onclick="replaceImage('contact3')">
+            <a href="#"></a><img src="images/Component 19 – 1.png" id="contact3" onclick="replaceImage('contact3')"></a>
           </div>
           <div class="col">
-            <img src="images/Component 20 – 1.png" id="contact4" onclick="replaceImage('contact4')">
+            <a href="#"></a><img src="images/Component 20 – 1.png" id="contact4" onclick="replaceImage('contact4')"></a>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -108,22 +108,28 @@
       '/images/Component201Toggle.png',
     ];
     function replaceImage(imageID) {
+      console.log(`${imageID}`);
+      let oldSrc = $(`#${imageID}`).attr("src");
       let newSrc = null;
       switch (imageID) {
         case 'contact1' :
           newSrc = replaceImages[0];
+          replaceImages[0] = oldSrc;
           break;
         case 'contact2' : 
           newSrc = replaceImages[1];
+          replaceImages[1] = oldSrc;
           break;
           case 'contact3' : 
           newSrc = replaceImages[2];
+          replaceImages[2] = oldSrc;
           break;
           case 'contact4' : 
           newSrc = replaceImages[3];
+          replaceImages[3] = oldSrc;
           break;       
       }
-      $(`#${imageID}`).src = newSrc;
+      $(`#${imageID}`).attr("src", newSrc);
     }
   </script>
 </html>
