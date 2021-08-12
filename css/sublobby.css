@@ -7,7 +7,7 @@ h1{
 body{
     align-items: center;
     text-align: center;
-    background-image: url(/images/peter-geo-MXYCg-wmCyc-unsplash.png);
+    background-image: url("/images/peter-geo-MXYCg-wmCyc-unsplash.png");
 }
 
 img{
